@@ -1,0 +1,143 @@
+
+@font-face {
+    font-family: "Young Serif";
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf)
+}
+
+:root {
+     
+- Nutmeg: hsl(14, 45%, 36%)
+- Dark Raspberry: hsl(332, 51%, 32%)
+
+--White: hsl(0, 0%, 100%)
+--Rose-White: hsl(330, 100%, 98%)
+--Eggshell: hsl(30, 54%, 90%)
+--Light-Grey: hsl(30, 18%, 87%)
+--Wenge-Brown: hsl(30, 10%, 34%)
+--Dark-Charcoal: hsl(24, 5%, 18%)
+
+--ff-main: 'Outfit', sans-serif;
+--ff-headings: 'Young Serif', serif;
+
+}
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;  
+    display: block;
+    font-style: italic;
+    color: hsl(332, 51%, 32%);
+}
+h1, h2, h3, h4 {
+    line-height: 1.2;
+    font-family: 'Young Serif', serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: hsl(14, 45%, 36%) ;
+    margin-bottom: 1.75rem;
+}
+ul, ol {
+    padding: 0 1rem;
+}
+body{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    background: hsl(30, 54%, 90%);
+    color: hsl(30, 10%, 34%);
+    line-height: 1.5;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.recipe-title{
+    font-size: 2.5rem;
+    color: hsl(24, 5%, 18%);
+}
+.prep-title{
+    font-size: 1.275rem;
+    font-weight: 600;
+    color: hsl(332, 51%, 32%) ;
+    margin-bottom: .5rem;
+}
+span{
+    font-weight: 700;
+}
+[data-cell= "nutrient-value"]{
+    color:hsl(14, 45%, 36%) ;
+    font-weight: 600;
+}
+li{
+    padding-left: 1rem;
+    margin-bottom: .5rem;
+}
+li ::marker {
+    font-weight: 600;
+    color:hsl(14, 45%, 36%)
+}
+.wrapper{
+    display: grid;
+    place-items: center;
+}
+.recipe-wrapper{
+    max-width: 45em;
+    padding: 1.75rem;
+    margin: 6rem 0;
+    border-radius: 1.5rem;
+    background: white;
+}
+.recipe-img{
+    border-radius: .8rem;
+    margin-bottom: 2.5rem;
+}
+section{
+    margin-top: 2rem;
+}
+hr{
+    outline: none;
+    border: none;
+    height: 1px;
+    background: hsl(30, 18%, 87%);
+    margin-top: 2rem;
+}
+.prep-time{
+    padding: 1.75rem;
+    border-radius: .8rem;
+    margin-top: 2rem;
+    background: hsl(30, 54%, 90%);
+}
+tr {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+@media( max-width: 500px){
+    .recipe-wrapper{
+        margin: 0;
+        border-radius: 0;
+        padding: 0;
+    }
+    .recipe-img{
+        border-radius: 0;
+    }
+    .recipe-container{
+        padding: 0 1.75rem;
+    }
+    .recipe-title{
+        font-size: 2.2rem;
+    }
+}
